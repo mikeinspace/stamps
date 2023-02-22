@@ -4,7 +4,7 @@ Storing "Art on the Blockchain" as a method of achieving "permanance" is often a
 
 We propose a method of embedding base64-formatted image data using unspendable outputs in a novel fashion.
 
-The means by which this is achieved is by first HEX-encoding an image's base64 string (HEX-encoding acts to preserve the data string from unintended truncation/conversion by wallet software.) and then broadcasting it using the Counterparty protocol. The length of the string will necessitate that Counterparty defaults to P2SH thereby chunking the data into outputs rather than using the limited (and prunable) OP_RETURN.  By doing so, the data is preserved in such a manner that makes pruning a full-node impossible. The data is preserved immutably forever.
+The means by which this is achieved is by first HEX-encoding an image's base64 string (HEX-encoding acts to preserve the data string from unintended truncation/conversion by wallet software.) and then broadcasting it using the Counterparty protocol. The length of the string will necessitate that Counterparty defaults to P2SH thereby chunking the data into outputs rather than using the limited (and prunable) OP_RETURN.  By doing so, the data is preserved in such a manner that is impossible to prune from a fullnode. The data is preserved immutably forever.
 
 # Formatting
 
