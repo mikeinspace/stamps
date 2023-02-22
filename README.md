@@ -15,6 +15,7 @@ Given the cost of preserving data in this manner we suggest the following guidan
 Once a compliant broadcast is completed, a user will need to create a Counterparty asset from the same address, preferably within the next few blocks. The asset name, supply and divisibility is entirely at the discretion of the user, however the transaction hash of the broadcast transaction must be included within the Description field prefaced by stamp:. The following method is recommended as a means by which "legacy" compatibility can be maintained with the popular xchain.io, but in terms of STAMPS consensus, only the broadcast transaction hash is required.
 
 **Recommended format**: imgur/2lPpwj6.png; stamp:efc9ad4ef56d45811777b29fe370900e5de1dd71746448d067e5d92e7361fae8
+
 **Minimum required format**: stamp:efc9ad4ef56d45811777b29fe370900e5de1dd71746448d067e5d92e7361fae8
 
 We now have a token referencing the immutable art where the provenance is objective having been issued by the same address as the broadcast transaction. This link will be made apparant on the STAMPS directory website in a very comparable manner as Inscriptions+Ordinals.
