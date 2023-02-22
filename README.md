@@ -23,4 +23,6 @@ STAMPS will also be numbered based on the token creation block height and the tr
 
 Users are able to trade the token on the Counterparty DEX, Dispensers or OTC or any other method as traditional Counterparty assets.
 
+# Example
 
+This broadcast: https://xchain.io/tx/2252814 includes a HEX-encoded base64 string. It's transaction hash: efc9ad4ef56d45811777b29fe370900e5de1dd71746448d067e5d92e7361fae8 is included within the Description field of this token: https://xchain.io/tx/2253890
