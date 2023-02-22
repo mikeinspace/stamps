@@ -17,4 +17,10 @@ Once a compliant broadcast is completed, a user will need to create a Counterpar
 Recommended format: imgur/2lPpwj6.png; stamp:efc9ad4ef56d45811777b29fe370900e5de1dd71746448d067e5d92e7361fae8
 Minimum required format: stamp:efc9ad4ef56d45811777b29fe370900e5de1dd71746448d067e5d92e7361fae8
 
+We now have a token referencing the immutable art where the provenance is objective having been issued by the same address as the broadcast transaction. This link will be made apparant on the STAMPS directory website in a very comparable manner as Inscriptions+Ordinals.
+
+STAMPS will also be numbered based on the token creation block height and the transaction order within the block. This will incentivize users to create the token as soon as possible after the broadcast transaction is confirmed in a block. Subsequent tokens by the same or different addresses will be deemed invalid.
+
+Users are able to trade the token on the Counterparty DEX, Dispensers or OTC or any other method as traditional Counterparty assets.
+
 
