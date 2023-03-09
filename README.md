@@ -1,4 +1,4 @@
-# STAMPS Protocol: Trading Immutable Art on the Blockchain
+# STAMPS: A protocol for storing images on-chain in spendable outputs for use with Counterparty assets.
 
 Storing "Art on the Blockchain" as a method of achieving "permanance" is often a misnomer in the NFT world. Most NFTs are merely image pointers to centralized hosting or stored in prunable witness data.
 
