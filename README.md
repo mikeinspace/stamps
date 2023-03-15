@@ -18,7 +18,7 @@ Stamps abide by the following rules:
 
 - A STAMP must be a numerical asset, for example: [A1997663462583877600]
 - A STAMP can be created from a previously existing numerical asset which was not previously a stamp. This is accomplished by updating the asset to include the `stamp:base64` string in a new broadcast transaction.
-- STAMPS cannot be duplicated on the same asset. For example, if one asset is a stamp, then by simply changing the description field to a new base64 string, it will not become a new stamp. However, the new `stamp:` transaction will be created on the blockchain. The new transaction will just not be indexed by the official stamp project. This is intended to keep them in a one-to-one relationship to the first created stamp. This may diverge from what is displayed on tools like xchain.io or other Counterparty explorers.
+- STAMPS cannot be duplicated on the same asset. For example, if one asset is a stamp, then by simply changing the description field to a new base64 string, it will not become a new stamp. However, the new `stamp:` transaction will be created on the blockchain. The new transaction will just not be indexed by the official stamp project. This is intended to keep them in a one-to-one relationship to the first created stamp.
 - The image must be encoded in base64.
   - "stamp:iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMBAMAAACkW0HUAAAAElBMVEUAAACui2EAAAC7s6akloG2n4LfldcbAAAAAXRSTlMAQObYZgAAAClJREFUCNdjQAdKCiCSMVAQTAmCKSYnE5CooqExRFARLoeghCD6BIAEAG00AqOK03PuAAAAAElFTkSuQmCC"
 
