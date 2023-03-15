@@ -1,5 +1,5 @@
 
-# STAMPS: A Protocol for Storing Images On-Chain in Spendable Outputs for Use with Counterparty Assets
+# STAMPS: A Protocol for Storing Images On-Chain in Spendable Outputs Immutably on Bitcoin
 
 Storing "Art on the Blockchain" as a method of achieving permanence is often a misnomer in the NFT world. Most NFTs are merely image pointers to centralized hosting or stored on-chain in prunable witness data. We propose a method of embedding base64-formatted image data using unspendable outputs in a novel fashion.
 
