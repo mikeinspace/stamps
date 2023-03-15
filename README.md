@@ -21,13 +21,23 @@ Stamps abide by the following rules:
 - STAMPS cannot be duplicated on the same asset. For example, if one asset is a stamp, then by simply changing the description field to a new base64 string, it will not become a new stamp. However, the new `stamp:` transaction will be created on the blockchain. The new transaction will just not be indexed by the official stamp project. This is intended to keep them in a one-to-one relationship to the first created stamp. This may diverge from what is displayed on tools like xchain.io or other Counterparty explorers.
 - The image must be encoded in base64.
   - "stamp:iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMBAMAAACkW0HUAAAAElBMVEUAAACui2EAAAC7s6akloG2n4LfldcbAAAAAXRSTlMAQObYZgAAAClJREFUCNdjQAdKCiCSMVAQTAmCKSYnE5CooqExRFARLoeghCD6BIAEAG00AqOK03PuAAAAAElFTkSuQmCC"
-  
+
 - Stamps can be a subasset to an existing Counterparty asset given that it follows the above formatting.
+
+## Decoding a STAMP
+
+A raw bitcoin transaction may be decoded using tools such as:
+
+https://jpja.github.io/Electrum-Counterparty/decode_tx.htm
+
+This will reveal the description field of the STAMP transaction. The description field will contain the base64 string. This string can be decoded using any base64 decoder. 
 
 ## Example
 
-**This broadcast**: https://xchain.io/tx/2252814 includes base64 string. Its transaction hash: `efc9ad4ef56d45811777b29fe370900e5de1dd71746448d067e5d92e7361fae8` is included within the Description field of this token: https://xchain.io/tx/2253890
+**This broadcast**: https://xchain.io/tx/2262968 includes a properly formated stamp:base64 string and is considered stamp #0. Its transaction hash: [17686488353b65b128d19031240478ba50f1387d0ea7e5f188ea7fda78ea06f4](https://blockstream.info/tx/17686488353b65b128d19031240478ba50f1387d0ea7e5f188ea7fda78ea06f4) 
 
+The official stamp indexing reference is here: https://stampchain.io/stamp.json This may be generated and hosted by anyone using the sample code in this project. 
 ## Trading
 
 Users are able to trade the token on the Counterparty DEX, Dispensers or OTC or any other method as traditional Counterparty assets.
+
