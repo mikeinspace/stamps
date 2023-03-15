@@ -1,29 +1,33 @@
-# STAMPS: A protocol for storing images on-chain in spendable outputs for use with Counterparty assets.
 
-Storing "Art on the Blockchain" as a method of achieving "permanance" is often a misnomer in the NFT world. Most NFTs are merely image pointers to centralized hosting or stored in prunable witness data.
+# STAMPS: A Protocol for Storing Images On-Chain in Spendable Outputs for Use with Counterparty Assets
 
-We propose a method of embedding base64-formatted image data using unspendable outputs in a novel fashion.
+Storing "Art on the Blockchain" as a method of achieving permanence is often a misnomer in the NFT world. Most NFTs are merely image pointers to centralized hosting or stored on-chain in prunable witness data. We propose a method of embedding base64-formatted image data using unspendable outputs in a novel fashion.
 
-The means by which this is achieved is by first HEX-encoding an image's base64 string (HEX-encoding acts to preserve the data string from unintended truncation/conversion by wallet software.) and then broadcasting it using the Counterparty protocol. The length of the string will necessitate that Counterparty defaults to P2SH thereby chunking the data into outputs rather than using the limited (and prunable) OP_RETURN.  By doing so, the data is preserved in such a manner that is impossible to prune from a fullnode. The data is preserved immutably forever.
+The means by which this is achieved is by encoding an image's binary content to a base64 string, placing this string as a suffix to `stamp:` in a transaction's description key, and then broadcasting it using the Counterparty protocol. The length of the string means that Counterparty defaults to P2SH, thereby chunking the data into outputs rather than using the limited (and prunable) OP_RETURN. By doing so, the data is preserved in such a manner that is impossible to prune from a fullnode, preserving the data immutably forever.
 
-# Formatting
+Given the cost of preserving data in this manner, we suggest the following guidance: 24x24 pixel, 8-colour-depth PNG. The constraints of this "canvas" are ideal for pixel art. In particular, the CryptoPunks use a native resolution of 24x24 pixels. While the technical specifications are open to interpretation and reinvention, inclusion within the STAMPS directory will rely on a number of consensus rules on STAMPS which are distinct from any other cases of using P2SH to encode data in this manner.
 
-Given the cost of preserving data in this manner we suggest the following guidance: 24x24 pixel, 8-colour-depth PNG. The constraints of this "canvas" are ideal for pixel art. In particular, the CryptoPunks use a native resolution of 24x24 pixels. While the technical specifications are open to interpretation and reinvention, inclusion within the STAMPS directory will rely on a number of consensus "rules" on STAMPS which is distinct from any other cases of using P2SH to encode data in this manner.
+STAMPS will be numbered based on the transaction timestamp. This is to ensure that the STAMPS directory is ordered chronologically. The first STAMP will be the first transaction to include the `stamp:` string with a valid base64 string appended in the description key, and so on. A transaction with an invalid or indecipherable base64 string will not be considered a stamp. The STAMP number will begin at zero and continue indefinitely.
 
-# Trading
 
-Once a compliant broadcast is completed, a user will need to create a Counterparty asset from the same address, preferably within the next few blocks. The asset name, supply and divisibility is entirely at the discretion of the user, however the transaction hash of the broadcast transaction must be included within the Description field prefaced by stamp:. The following method is recommended as a means by which "legacy" compatibility can be maintained with the popular xchain.io, but in terms of STAMPS consensus, only the broadcast transaction hash is required.
+## What Makes a Stamp?
 
-**Recommended format**: imgur/2lPpwj6.png; stamp:efc9ad4ef56d45811777b29fe370900e5de1dd71746448d067e5d92e7361fae8
+A STAMP is an immutable broadcast transaction which contains a valid `stamp:base64` string in the description key. STAMPS can be decoded directly from the original Bitcoin transaction. In order for speed of processing and to eliminate needs for indexing, we are utilizing Counterparty API to decode the original Bitcoin transactions. Once the decoding is complete, we upload the images to stampchain.io for consumption via web applications as a convenience. It is intended that anyone may decode these transactions and interpret the underlying image data for rendering on any application. 
 
-**Minimum required format**: stamp:efc9ad4ef56d45811777b29fe370900e5de1dd71746448d067e5d92e7361fae8
+Stamps abide by the following rules:
 
-We now have a token referencing the immutable art where the provenance is objective having been issued by the same address as the broadcast transaction. This link will be made apparant on the STAMPS directory website in a very comparable manner as Inscriptions+Ordinals.
+- A STAMP must be a numerical asset, for example: [A1997663462583877600]
+- A STAMP can be created from a previously existing numerical asset which was not previously a stamp. This is accomplished by updating the asset to include the `stamp:base64` string in a new broadcast transaction.
+- STAMPS cannot be duplicated on the same asset. For example, if one asset is a stamp, then by simply changing the description field to a new base64 string, it will not become a new stamp. However, the new `stamp:` transaction will be created on the blockchain. The new transaction will just not be indexed by the official stamp project. This is intended to keep them in a one-to-one relationship to the first created stamp. This may diverge from what is displayed on tools like xchain.io or other Counterparty explorers.
+- The image must be encoded in base64.
+  - "stamp:iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMBAMAAACkW0HUAAAAElBMVEUAAACui2EAAAC7s6akloG2n4LfldcbAAAAAXRSTlMAQObYZgAAAClJREFUCNdjQAdKCiCSMVAQTAmCKSYnE5CooqExRFARLoeghCD6BIAEAG00AqOK03PuAAAAAElFTkSuQmCC"
+  
+- Stamps can be a subasset to an existing Counterparty asset given that it follows the above formatting.
 
-STAMPS will also be numbered based on the token creation block height and the transaction order within the block. This will incentivize users to create the token as soon as possible after the broadcast transaction is confirmed in a block. Subsequent tokens by the same or different addresses will be deemed invalid.
+## Example
+
+**This broadcast**: https://xchain.io/tx/2252814 includes base64 string. Its transaction hash: `efc9ad4ef56d45811777b29fe370900e5de1dd71746448d067e5d92e7361fae8` is included within the Description field of this token: https://xchain.io/tx/2253890
+
+## Trading
 
 Users are able to trade the token on the Counterparty DEX, Dispensers or OTC or any other method as traditional Counterparty assets.
-
-# Example
-
-**This broadcast**: https://xchain.io/tx/2252814 includes a HEX-encoded base64 string. It's transaction hash: efc9ad4ef56d45811777b29fe370900e5de1dd71746448d067e5d92e7361fae8 is included within the Description field of this token: https://xchain.io/tx/2253890
