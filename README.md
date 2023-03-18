@@ -20,14 +20,15 @@ Stamps abide by the following rules:
 - A STAMP can be created from a previously existing numerical asset which was not previously a stamp. This is accomplished by updating the asset to include the `stamp:base64` string in a new broadcast transaction.
 - STAMPS cannot be duplicated on the same asset. For example, if one asset is a stamp, then by simply changing the description field to a new base64 string, it will not become a new stamp. However, the new `stamp:` transaction will be created on the blockchain. The new transaction will just not be indexed by the official stamp project. This is intended to keep them in a one-to-one relationship to the first created stamp.
 - The image must be encoded in base64.
-- Recommended format:
-  - "stamp:iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMBAMAAACkW0HUAAAAElBMVEUAAACui2EAAAC7s6akloG2n4LfldcbAAAAAXRSTlMAQObYZgAAAClJREFUCNdjQAdKCiCSMVAQTAmCKSYnE5CooqExRFARLoeghCD6BIAEAG00AqOK03PuAAAAAElFTkSuQmCC"
+- Recommended Format:
+  - `stamp:iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMBAMAAACkW0HUAAAAElBMVEUAAACui2EAAAC7s6akloG2n4LfldcbAAAAAXRSTlMAQObYZgAAAClJREFUCNdjQAdKCiCSMVAQTAmCKSYnE5CooqExRFARLoeghCD6BIAEAG00AqOK03PuAAAAAElFTkSuQmCC`
 
-- Alternate Mime Type Format
-    - "stamp:image/png;iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMBAMAAACkW0HUAAAAElBMVEUAAACui2EAAAC7s6akloG2n4LfldcbAAAAAXRSTlMAQObYZgAAAClJREFUCNdjQAdKCiCSMVAQTAmCKSYnE5CooqExRFARLoeghCD6BIAEAG00AqOK03PuAAAAAElFTkSuQmCC"
-    - The mime type is not currently implemented, but is reserved for future use.
+- Alternative Format:
+    For full support of data URLS, the following format is supported:
+    - stamp:[<mediatype>][;base64],<data>
+    - `stamp:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMBAMAAACkW0HUAAAAElBMVEUAAACui2EAAAC7s6akloG2n4LfldcbAAAAAXRSTlMAQObYZgAAAClJREFUCNdjQAdKCiCSMVAQTAmCKSYnE5CooqExRFARLoeghCD6BIAEAG00AqOK03PuAAAAAElFTkSuQmCC`
     - The mime type (file type/suffix) is also encoded within the binary data after decoding the Base64 string.
-    - the mime type *MUST* be enclosed in the delimiters `:` and `;` and must be followed by a base64 string.
+    -  see: (https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Data_URIs)
 
 - Stamps can be a subasset to an existing Counterparty asset given that it follows the above formatting.
 
