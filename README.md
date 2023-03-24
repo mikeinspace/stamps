@@ -33,7 +33,7 @@ If there is a desire to increase the scope of STAMPS to include non-image format
 The intent is to always provide a fallback image to be rendered for the sake of backwards-compatibility. However, this can also be useful when rendering search results where more verbose content would be problematic to display.
 
     - `stamp:<base64 data>;<mediatype>:<base64 data>`
-    - `stamp:iVBORw0KGgoAAAANSU...`;`TEXT:aGVsbG8gdGhpcyBpcyBtZQ==`
+    - `stamp:iVBORw0KGgoAAAANSU...;TEXT:aGVsbG8gdGhpcyBpcyBtZQ==`
     - see: (https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Data_URIs)
 
 
