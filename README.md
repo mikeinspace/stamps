@@ -39,7 +39,7 @@ The intent is to always provide a fallback image to be rendered for the sake of 
     
 Example:
     
-    - STAMP:iVBORw0KGgoAAAANSU...;TEXT:aGVsbG8gdGhpcyBpcyBtZQ==
+    - STAMP:iVBORw0KGgoAAAANSU...;TEXT/PLAIN:aGVsbG8gdGhpcyBpcyBtZQ==
     
 An even more expressive solution involving a base64-encoded image inside a base-64 encoded JSON "envelope" with many possible fields is outside the scope of this enhancement and requires further investigation into its feasibility.
 
@@ -50,6 +50,16 @@ A raw bitcoin transaction may be decoded using tools such as:
 https://jpja.github.io/Electrum-Counterparty/decode_tx.htm
 
 This will reveal the description field of the STAMP transaction. The description field will contain the base64 string. This string can be decoded using any base64 decoder. 
+
+## Absence of MIME-type and encoding
+
+Our rationale for excluding both the MIME-type and encoding goes as follows:
+
+- The fewer the bytes the better.
+- Given the limited scope of acceptable file formats, we are confident we can decode them accurately based on the base64 string alone.
+- We are only interested in decoding base64, so if the string does not conform to valid base64 it is rejected. Therefore, specification of the encoding is unnecessary.
+
+This all pertains to current state. The future-state proposal would require a MIME-type like 'text/plain' for the auxilary content to be decoded.
 
 ## STAMP Indexing Reference
 
