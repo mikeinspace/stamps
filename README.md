@@ -67,5 +67,5 @@ Users are able to trade the token on the Counterparty DEX, Dispensers or OTC or 
 
 ## Future Partnerships
 
-There have been ongoing discussions with Emblem, Hiro Wallet and Token.Art dev teams. All expressed enthusiastism about the potential for integration.
+There have been ongoing discussions with Emblem, Hiro Wallet and Token.Art dev teams. All expressed enthusiasm about the potential for integration.
 
