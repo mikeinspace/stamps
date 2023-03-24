@@ -56,7 +56,7 @@ This will reveal the description field of the STAMP transaction. The description
 Our rationale for excluding both the MIME-type and encoding goes as follows:
 
 - The fewer the bytes the better.
-- Given the limited scope of acceptable file formats, we are confident we can decode them accurately based on the base64 string alone.
+- Given the limited scope of acceptable file formats, we are confident that decoding them accurately based on the base64 string alone is trivial.
 - We are only interested in decoding base64, so if the string does not conform to valid base64 it is rejected. Therefore, specification of the encoding is unnecessary.
 
 This all pertains to current state. The future-state proposal would require a MIME-type like 'text/plain' for the auxilary content to be decoded.
