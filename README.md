@@ -59,3 +59,13 @@ The official stamp indexing reference is here: https://stampchain.io/stamp.json 
 
 Users are able to trade the token on the Counterparty DEX, Dispensers or OTC or any other method as traditional Counterparty assets.
 
+## Working demonstrations
+
+- Main Directory: [https://STAMPCHAIN.IO](https://stampchain.io/)
+- 3rd Party Directory: https://kaleidoscopexcp.com/stamps/
+- Marketplace: https://scarce.city/marketplace/digital?refinementList%5Bset%5D%5B0%5D=stampchain
+
+## Future Partnerships
+
+- There have been ongoing discussions with Emblem, Hiro Wallet and Token.Art dev teams. All very enthusiastic about the potential for integration.
+
