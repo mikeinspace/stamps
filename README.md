@@ -65,6 +65,8 @@ This all pertains to current state. The future-state proposal would require a MI
 
 While no specific markup should be required, STAMPS are purposely designed to be very small in the range of 24x24 pixels. While they can be presented at this size or even scaled-up using the traditional method, the user experience would be sub-optimal. Using a few simple CSS rules will optimize the rendering. Eg: image-rendering: pixelated;
 
+Visual example of pixel art scaling without image degradation: https://i.imgur.com/CGLqw11.jpg
+
 ## STAMP Indexing Reference
 
 The official stamp indexing reference is here: https://stampchain.io/stamp.json This may be generated and hosted by anyone using the sample code in this project. 
