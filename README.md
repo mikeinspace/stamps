@@ -40,8 +40,6 @@ The intent is to always provide a fallback image to be rendered for the sake of 
 Example:
     
     - stamp:iVBORw0KGgoAAAANSU...;TEXT:aGVsbG8gdGhpcyBpcyBtZQ==
-    - see: (https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Data_URIs)
-
 
 ## Decoding a STAMP
 
