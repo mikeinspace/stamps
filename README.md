@@ -40,6 +40,8 @@ The intent is to always provide a fallback image to be rendered for the sake of 
 Example:
     
     - STAMP:iVBORw0KGgoAAAANSU...;TEXT:aGVsbG8gdGhpcyBpcyBtZQ==
+    
+An even more expressive solution involving a base64-encoded image inside a base-64 encoded JSON "envelope" with many possible fields is outside the scope of this enhancement and requires further investigation into its feasibility.
 
 ## Decoding a STAMP
 
