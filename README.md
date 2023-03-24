@@ -35,11 +35,11 @@ If there is a desire to increase the scope of STAMPS to include non-image format
 
 The intent is to always provide a fallback image to be rendered for the sake of backwards-compatibility. However, this can also be useful when rendering search results where more verbose content would be problematic to display.
 
-- STAMP:<base64 data>;<mediatype>:<base64 data>
+- `STAMP:<base64 data>;<mediatype>:<base64 data>`
     
 Example:
     
-- STAMP:iVBORw0KGgoAAAANSU...;TEXT/PLAIN:aGVsbG8gdGhpcyBpcyBtZQ==
+- `STAMP:iVBORw0KGgoAAAANSU...;TEXT/PLAIN:aGVsbG8gdGhpcyBpcyBtZQ==`
     
 An even more expressive solution involving a base64-encoded image inside a base-64 encoded JSON "envelope" with many possible fields is outside the scope of this enhancement and requires further investigation into its feasibility.
 
