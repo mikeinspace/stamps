@@ -41,7 +41,7 @@ Example:
     
 - `text/plain;base64,aGVsbG8gdGhpcyBpcyBtZQ==;stamp:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMBAMAAACkW0HUAAAAElBMVEUAAACui2EAAAC7s6akloG2n4LfldcbAAAAAXRSTlMAQObYZgAAAClJREFUCNdjQAdKCiCSMVAQTAmCKSYnE5CooqExRFARLoeghCD6BIAEAG00AqOK03PuAAAAAElFTkSuQmCC`
 
-NOTE: The ordering of auxilary base64 data "at the front" or "at the end" is up for debate as this is just a future-state proposal.
+NOTE: The ordering of auxilary base64 data "at the front" or "at the end" is up for debate as this is just a future-state proposal. Users are **strongly** advised not to use this until its properly implemented.
     
 An even more expressive solution involving a base64-encoded image inside a base-64 encoded JSON "envelope" with many possible fields is outside the scope of this enhancement and requires further investigation into its feasibility.
 
