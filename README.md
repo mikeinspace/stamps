@@ -61,6 +61,10 @@ Our rationale for excluding both the MIME-type and encoding goes as follows:
 
 This all pertains to current state. The future-state proposal would require a MIME-type like 'text/plain' for the auxilary content to be decoded.
 
+## XCHAIN-specific markup
+
+While no specific markup should be required, STAMPS are purposely designed to be very small in the range of 24x24 pixels. While they can be presented at this size or even scaled-up using the traditional method, the user experience would be sub-optimal. Using a few simple CSS rules will optimize the rendering. Eg: image-rendering: pixelated;
+
 ## STAMP Indexing Reference
 
 The official stamp indexing reference is here: https://stampchain.io/stamp.json This may be generated and hosted by anyone using the sample code in this project. 
