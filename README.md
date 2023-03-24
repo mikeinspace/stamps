@@ -35,8 +35,6 @@ If there is a desire to increase the scope of STAMPS to include non-image format
 
 The intent is to always provide a fallback image to be rendered for the sake of backwards-compatibility. However, this can also be useful when rendering search results where more verbose content would be problematic to display.
 
-- `STAMP:<base64 data>;<mediatype>:<base64 data>`
-
 - `<mediatype>;base64,<base64 data>;STAMP:<mediatype>;base64,<base64 data>`
     
 Example:
