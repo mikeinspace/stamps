@@ -25,8 +25,7 @@ Another example of this is phenomenon is the “BOBO” asset (STAMP #29) transl
 
 Simple Key Substitution is another noval method of creating a Numismatic Sequence:
 
-<code>
-A=1
+<code>A=1
 B=2
 C=3
 ...
@@ -36,8 +35,7 @@ Pick a word, convert it to numbers, and insert it in the Numeral asset's name af
 
 For instance, RAREPEPE encoded into a numeric would look like this:
 
-<code>
-R = 18
+<code>R = 18
 A = 1
 R = 18
 E = 5
@@ -45,6 +43,7 @@ P = 16
 E = 5
 P = 16
 E = 5</code>
+
 
 <code>RAREPEPE = 181185165165</code>
 
