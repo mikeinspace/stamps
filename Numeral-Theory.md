@@ -35,14 +35,14 @@ Pick a word, convert it to numbers, and insert it in the Numeral asset's name af
 
 For instance, RAREPEPE encoded into a numeric would look like this:
 
-`R = 18
+<pre>`R = 18
 A = 1
 R = 18
 E = 5
 P = 16
 E = 5
 P = 16
-E = 5`
+E = 5`</pre>
 
 `RAREPEPE = 181185165165`
 
