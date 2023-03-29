@@ -1,8 +1,8 @@
-Numeral Theory
+# Numeral Theory #
 
-## Abstract: ##
+## Abstract ##
 
-Numeral theory is a fascinating field that involves the characterization and manipulation of numbers, enabling them to have distinct identities and significance. In this paper, we explore the use of numeral theory in creating unique digital artifacts, called STAMPS, that can be transferred using Bitcoin transactions. A STAMP is defined as a Numeral, which is a combination of the Alpha Signet and a unique Numismatic Sequence. The Alpha Signet symbolizes the genesis of STAMPS, while the Numismatic Sequence can either represent a distinct signal or simply be random noise. The significance of a Numeral lies in its ability to immortalize a statement on the blockchain, persisting long after its creator and their progeny.
+Numeral theory is a fascinating field that involves the characterization and manipulation of numbers, enabling them to have distinct identities and significance. In this paper, we explore the use of numeral theory in creating unique digital artifacts, called STAMPS, that can be transferred using Bitcoin transactions. A STAMP is defined as a Numeral, which is a combination of the Alpha Signet and a unique Numismatic Sequence. The Alpha Signet symbolizes the genesis of STAMPS, while the Numismatic Sequence can either represent a distinct signal or simply be random noise. The significance of a Numeral lies in its ability to immortalize a statement on the blockchain, persisting indefinitely.
 
 
 Introduction:
