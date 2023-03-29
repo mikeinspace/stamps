@@ -44,11 +44,11 @@ E = 5
 P = 16
 E = 5</code>
 
-`RAREPEPE = 181185165165`
+<code>RAREPEPE = 181185165165</code>
 
 The "RAREPEPE" asset name is then encoded into a numeric asset.
 
-`A1811851651650000000 = RAREPEPE`
+<code>A1811851651650000000 = RAREPEPE</code>
 
 
 ## In Summation ##
