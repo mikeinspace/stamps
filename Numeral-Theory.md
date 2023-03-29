@@ -25,10 +25,10 @@ Another example of this is phenomenon is the “BOBO” asset (STAMP #29) transl
 
 Simple Key Substitution is another noval method of creating a Numismatic Sequence:
 
-A=1
-B=2
-C=3
-...
+A=1<br>
+B=2<br>
+C=3<br>
+...<br>
 Z=26
 
 Pick a word, convert it to numbers, and insert it in the Numeral asset's name after the Alpah Signet, then pad the rest of the string with zeros (0) to make the asset name 19 characters long.
