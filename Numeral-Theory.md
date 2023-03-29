@@ -23,6 +23,34 @@ In the case of the “Yin and Yang” symbol (STAMP #311), its form and shape is
 
 Another example of this is phenomenon is the “BOBO” asset (STAMP #29) transliterated to “8080” in the Numeral asset’s name: A808011111111111111
 
+Simple Key Substitution is another noval method of creating a Numismatic Sequence:
+
+A=1
+B=2
+C=3
+...
+Z=26
+
+Pick a word, convert it to numbers, and insert it in the Numeral asset's name after the Alpah Signet, then pad the rest of the string with zeros (0) to make the asset name 19 characters long.
+
+For instance, RAREPEPE encoded into a numeric would look like this:
+
+R = 18
+A = 1
+R = 18
+E = 5
+P = 16
+E = 5
+P = 16
+E = 5
+
+RAREPEPE = 181185165165
+
+The "RAREPEPE" asset name is then encoded into a numeric asset.
+
+A1811851651650000000 = RAREPEPE
+
+
 ## In Summation ##
 
 Numeral theory is still, very much, the frontier land as we learn more and more each day. Yet, we are often reminded of how little we actually know.
