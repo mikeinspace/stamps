@@ -29,6 +29,12 @@ Example:
 
 - `STAMP:iVBORw0KGgoAAAANSU...`
 
+## Potential Future State formatting:
+
+Warning: Do not try this until its actually approved. Doing so may result in an invalid STAMP as plans may change.
+
+- `STAMP:data:image/png;base64,iVBORw0KGgoAAAANSU...`
+
 ## Decoding a STAMP
 
 A raw bitcoin transaction may be decoded using tools such as:
