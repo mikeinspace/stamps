@@ -29,22 +29,6 @@ Example:
 
 - `STAMP:iVBORw0KGgoAAAANSU...`
 
-**Future-state Alternative Format:**
-
-If there is a desire to increase the scope of STAMPS to include non-image formats, we propose the following backwards-compatible format.
-
-The intent is to always provide a fallback image to be rendered for the sake of backwards-compatibility. However, this can also be useful when rendering search results where more verbose content would be problematic to display.
-
-- `<mediatype>;base64,<base64 data>;STAMP:<mediatype>;base64,<base64 data>`
-    
-Example:
-    
-- `text/plain;base64,aGVsbG8gdGhpcyBpcyBtZQ==;stamp:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMBAMAAACkW0HUAAAAElBMVEUAAACui2EAAAC7s6akloG2n4LfldcbAAAAAXRSTlMAQObYZgAAAClJREFUCNdjQAdKCiCSMVAQTAmCKSYnE5CooqExRFARLoeghCD6BIAEAG00AqOK03PuAAAAAElFTkSuQmCC`
-
-NOTE: The ordering of auxilary base64 data "at the front" or "at the end" is up for debate as this is just a future-state proposal. Users are **strongly** advised not to use this until its properly implemented.
-    
-An even more expressive solution involving a base64-encoded image inside a base-64 encoded JSON "envelope" with many possible fields is outside the scope of this enhancement and requires further investigation into its feasibility.
-
 ## Decoding a STAMP
 
 A raw bitcoin transaction may be decoded using tools such as:
