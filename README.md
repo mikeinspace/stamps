@@ -15,10 +15,6 @@ A STAMP is a Counterparty transaction which contains a valid `STAMP:base64` stri
 
 ## STAMPS abide by the following rules:
 
-
-- A STAMP must be a numerical asset, for example: [A1997663462583877600]
-- A STAMP can be created from a previously existing numerical asset which was not previously a STAMP. This is accomplished by updating the asset to include the `stamp:base64` string in a new transaction.
-- STAMPS cannot be duplicated on the same asset. For example, if one asset is a STAMP, then by simply changing the description field to a new base64 string, it will not become a new STAMP. However, the new `STAMP:` transaction will be created on the blockchain. The new transaction will just not be indexed by the official STAMPS project. This is intended to keep them in a one-to-one relationship to the first created STAMP.
 - The image data must be in either jpg, png, gif or webP format and encoded in base64.
 
 **Recommended Format:**
@@ -59,21 +55,7 @@ While no specific markup should be required, STAMPS are purposely designed to be
 
 Visual example of pixel art scaling without image degradation: https://i.imgur.com/CGLqw11.jpg
 
-## STAMP Indexing Reference
-
-The official stamp indexing reference is here: https://stampchain.io/stamp.json This may be generated and hosted by anyone using the sample code in this project. 
-
 ## Trading
 
 Users are able to trade the token on the Counterparty DEX, Dispensers or OTC or any other method as traditional Counterparty assets.
-
-## The Ecosystem
-
-- Main Directory: [https://STAMPCHAIN.IO](https://stampchain.io/)
-- 3rd Party Directory: https://kaleidoscopexcp.com/stamps/
-- Marketplace: https://scarce.city/marketplace/digital?refinementList%5Bset%5D%5B0%5D=stampchain
-
-## Future Partnerships
-
-There have been ongoing discussions with Emblem, Hiro Wallet and Token.Art dev teams. All expressed enthusiasm about the potential for integration.
 
