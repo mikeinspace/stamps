@@ -1,9 +1,9 @@
 
 # STAMPS: A Protocol for Storing Images On-Chain in Transaction Outputs Immutably on Bitcoin
 
-**IMPORTANT NOTICE: STAMPS IS A BLOCKCHAIN-AGNOSTIC PROTOCOL.
+<span style="color:orange">**IMPORTANT NOTICE: STAMPS IS A BLOCKCHAIN-AGNOSTIC PROTOCOL.
 FOR RULES SPECIFIC TO THE BITCOIN STAMPS PROJECT, PLEASE VISIT:
-https://github.com/mikeinspace/stamps/blob/main/BitcoinStamps.md**
+https://github.com/mikeinspace/stamps/blob/main/BitcoinStamps.md**</span>
 
 Storing "Art on the Blockchain" as a method of achieving permanence is often a misnomer in the NFT world. Most NFTs are merely image pointers to centralized hosting or stored on-chain in prunable witness data. We propose a method of embedding base64-formatted image data using transaction outputs in a novel fashion.
 
