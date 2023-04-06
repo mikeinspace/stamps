@@ -1,7 +1,7 @@
 
 # STAMPS: A Protocol for Storing Images On-Chain in Transaction Outputs Immutably on Bitcoin
 
-<span style="color:orange">**IMPORTANT NOTICE: STAMPS IS A BLOCKCHAIN-AGNOSTIC PROTOCOL.
+<span style="background-color:orange;">**IMPORTANT NOTICE: STAMPS IS A BLOCKCHAIN-AGNOSTIC PROTOCOL.
 FOR RULES SPECIFIC TO THE BITCOIN STAMPS PROJECT, PLEASE VISIT:
 https://github.com/mikeinspace/stamps/blob/main/BitcoinStamps.md**</span>
 
