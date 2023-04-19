@@ -18,4 +18,14 @@ The second example of the Key Burn method in use (a valid #Bitcoin Stamp) is her
 <code>020202020202020202020202020202020202020202020202020202020202020202</code>
 <code>030303030303030303030303030303030303030303030303030303030303030303</code>
 
+We strongly advise other minting services looking to implement Key Burn to use one of the addresses above or work closely with the STAMP protocol developers to ensure that a consolidated list of burn addresses is maintained as we will be badging #Bitcoin Stamps in a future update on STAMPCHAIN.IO.
+
+# Badging #
+
+In a future release, #Bitcoin Stamps will have 1 of 3 designations based on the state of the spendable outputs:
+
+* Spent Outputs (Art will likely be blacked out but numbering will remain)
+* Unspent Outputs; Key Available
+* Unspent Outputs; Key Burned
+
 Special Thanks to B0B Smith, Regan and RΞINAMORA for devising and coding this solution.
