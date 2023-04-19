@@ -34,4 +34,6 @@ In a future release, Bitcoin Stamps will have 1 of 3 designations based on the s
 * Unspent Outputs; Key Available
 * Unspent Outputs; Key Burned
 
+# Acknowledgements #
+
 Special Thanks to B0B Smith, Regan and RΞINAMORA for devising and coding this solution.
