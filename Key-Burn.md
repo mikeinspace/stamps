@@ -18,4 +18,4 @@ The second example of the Key Burn method in use (a valid #Bitcoin Stamp) is her
 <code>020202020202020202020202020202020202020202020202020202020202020202</code>
 <code>030303030303030303030303030303030303030303030303030303030303030303</code>
 
-Special Thanks to B0B Smith, 
+Special Thanks to B0B Smith, Regan and RΞINAMORA for devising and coding this solution.
