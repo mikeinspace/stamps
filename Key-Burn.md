@@ -28,7 +28,7 @@ Here are the key addresses chosen for the initial launch of Key Burn.
 <code>020202020202020202020202020202020202020202020202020202020202020202</code>
 <code>030303030303030303030303030303030303030303030303030303030303030303</code>
 
-We strongly advise other minting services looking to implement Key Burn to use one of the addresses above or work closely with the STAMP protocol developers to ensure that a consolidated list of burn addresses is maintained as we will be badging Bitcoin Stamps in a future update on STAMPCHAIN.IO.
+We strongly advise other minting services looking to implement Key Burn to use one of the addresses above or work closely with the STAMP protocol developers to ensure that a consolidated list of burn addresses is maintained as we will be badging Bitcoin Stamps in a future update of STAMPCHAIN.IO as well as the webservice API.
 
 # Badging #
 
