@@ -24,7 +24,7 @@ We strongly advise other minting services looking to implement Key Burn to use o
 
 In a future release, #Bitcoin Stamps will have 1 of 3 designations based on the state of the spendable outputs:
 
-* Spent Outputs (Art will likely be blacked out but numbering will remain)
+* Spent Outputs (Art will likely be blacked-out or faded but numbering will remain instact)
 * Unspent Outputs; Key Available
 * Unspent Outputs; Key Burned
 
