@@ -1,5 +1,5 @@
 
-# Bitcoin Stamps: Introducing 'Key Burn' #
+# Bitcoin Stamps: Introduction to 'Key Burn' #
 
 Key Burn is a new technique introduced to address concerns with the spendable outputs that encode the art of a Bitcoin Stamp.
 
