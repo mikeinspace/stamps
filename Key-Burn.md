@@ -1,9 +1,9 @@
 
 # Bitcoin Stamps 'Key Burn' Methodology #
 
-Key Burn is a new technique introduced to address concerns with the spendable outputs that encode the art of a #Bitcoin Stamp.
+Key Burn is a new technique introduced to address concerns with the spendable outputs that encode the art of a Bitcoin Stamp.
 
-Based on 'NFiniTy' by B0B Smith, Key Burn assigns the spending key of the 'fake multisig' to a burn address when a #Bitcoin Stamp is minted, making the spendable outputs, effectively, unspendable.
+Based on 'NFiniTy' by B0B Smith, Key Burn assigns the spending key of the 'fake multisig' to a burn address when a Bitcoin Stamp is minted, making the spendable outputs, effectively, unspendable.
 
 Presently, the STAMPCHAIN.IO minting service does this by default by cycling through a series of known burn addresses which can easily be scrutinized to validate that no private key can practically exist. In the future, this library of burn addresses may grow to address adversarial action.
 
@@ -18,13 +18,13 @@ The second example of the Key Burn method in use (a valid #Bitcoin Stamp) is her
 <code>020202020202020202020202020202020202020202020202020202020202020202</code>
 <code>030303030303030303030303030303030303030303030303030303030303030303</code>
 
-We strongly advise other minting services looking to implement Key Burn to use one of the addresses above or work closely with the STAMP protocol developers to ensure that a consolidated list of burn addresses is maintained as we will be badging #Bitcoin Stamps in a future update on STAMPCHAIN.IO.
+We strongly advise other minting services looking to implement Key Burn to use one of the addresses above or work closely with the STAMP protocol developers to ensure that a consolidated list of burn addresses is maintained as we will be badging Bitcoin Stamps in a future update on STAMPCHAIN.IO.
 
 # Badging #
 
-In a future release, #Bitcoin Stamps will have 1 of 3 designations based on the state of the spendable outputs and key availability:
+In a future release, Bitcoin Stamps will have 1 of 3 designations based on the state of the spendable outputs and key availability:
 
-* Spent Outputs (Art will likely be blacked-out or faded but numbering will remain instact)
+* Spent Outputs (Art will likely be blacked-out or faded but numbering will remain intact)
 * Unspent Outputs; Key Available
 * Unspent Outputs; Key Burned
 
