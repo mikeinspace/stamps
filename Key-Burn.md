@@ -3,7 +3,7 @@
 
 Key Burn is a new technique introduced to address concerns with the spendable outputs that encode the art of a Bitcoin Stamp.
 
-While spending outputs is currently a non-trivial process, tooling is likely to emerge in the near future making the process easy enough. Combined with the large amount of sats embedded in older outputs (7800), we recognize the incentive to spend the outputs. That being said, spent outputs would only mean that the art would no longer exist within the UTXO set, but continue to live in the transaction data of the blockchain held by all full nodes.
+While spending outputs is currently a non-trivial process, tooling is likely to emerge in the near future making the process easy enough. Combined with the large amount of sats embedded in older Stamps' outputs (7800), we recognize the incentive to spend the outputs. That being said, spent outputs would only mean that the art would no longer exist within the UTXO set, but continue to live in the transaction data of the blockchain held by all full nodes.
 
 Key Burn is the first step in addressing this potential issue. We are also working on a redemption method paired with Key Burn that would allow artists to redeem up to 90% of the trapped sats from the outputs before 'burning' the multisig key. We believe this approach should be incentive-compatible with artists.
 
