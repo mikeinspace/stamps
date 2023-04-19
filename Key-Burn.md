@@ -19,6 +19,10 @@ The second example of the Key Burn method in use (a valid #Bitcoin Stamp) is her
 
 # Library of current Key Burn addresses: #
 
+If you're unfamiliar with how a burn address works, essentially, a completely improbable pattern is chosen which proves that no private key is held. This is because the public key is derived from the private key, so the odds of coming up with a pre-determined pattern of great length is infinitesimally small to the point where a computer would need to grind away at keys for billions of years in order to do so.
+
+Here are the key addresses chosen for the initial launch of Key Burn.
+
 <code>022222222222222222222222222222222222222222222222222222222222222222</code>
 <code>033333333333333333333333333333333333333333333333333333333333333333</code>
 <code>020202020202020202020202020202020202020202020202020202020202020202</code>
