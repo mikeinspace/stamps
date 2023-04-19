@@ -1,5 +1,5 @@
 
-# Bitcoin Stamps Key Burn Methodology #
+# Bitcoin Stamps 'Key Burn' Methodology #
 
 Key Burn is a new technique introduced to address concerns with the spendable outputs that encode the art of a #Bitcoin Stamp.
 
