@@ -26,7 +26,7 @@ Comparing the encoding methods for files of about the same size; a [Stamp of 285
 With Bitcoin Stamps the Bitcoin transaction is three times larger than the OLGA-encoded file, and for each byte of the file 26 satoshis are burnt. With this method the tx is just 50% larger than the OLGA-encoded file, and only 11 sats are burnt per byte. This makes this method more than 50% cheaper than traditional Bitcoin Stamps.
 
 # Definitions
-- `FILE:` - Case insensitive prefix of `asset description` or `broadcast` signaling that a file is encoded in the transaction in accordance with CIP33 specifications.. 
+- `STAMP:` - Case insensitive prefix of `asset description` signaling that a file is encoded in the transaction.
 - `filename` - Unicode filename including file extension.
 - `P2WSH output` - 32 byte script data of a Pay-To-Witness-Script-Hash address output.
 
@@ -40,14 +40,8 @@ With Bitcoin Stamps the Bitcoin transaction is three times larger than the OLGA-
 
 ## Link Token to File via Issuance
 - in the same transaction, insert a valid `op_return` Counterparty issuance.
-- asset description must begin with `FILE:` (case insensitive) followed by filename.
-
-## Link Token to File via Broadcast
-Similar to issuance with additional requirements:
-- to link to one asset, make the filename begin with the asset name followed by double underscores.
-- to link to all subassets, make the filename begin with the parent asset followed by triple underscores.
-- links from the current issuer's address are considered official.
-- links from any other addresses are unofficial.
+- asset description must begin with `STAMP:` (case insensitive) followed by filename.
+- asset must be numeric not named or sub-asset of named.
 
 ## Limitations 
 Since a standard node accepts maximum 200 outputs, and one is used for op_return and one for change, the file must fit 198 P2WSH outputs. This implies a max file size of `198*32 - 2 =` 6334 bytes. The theoretical max filesize (that can be mined by a node ignoring standard rules) is `256^2 - 2 =` 65,536 bytes, only limited by the two-byte size prefix.
