@@ -1,1 +1,1 @@
-<pre><p><strong style="font-size:30px;">Octet Linked Graphics & Artifacts</strong><br/>Based on "File Storage in P2WSH Outputs" by JP Janssen</p></pre>
+<pre><p><strong>Octet Linked Graphics & Artifacts</strong><br/>Based on "File Storage in P2WSH Outputs" by JP Janssen<br/>Source: https://github.com/CounterpartyXCP/cips/blob/master/cip-0033.md</p></pre>
