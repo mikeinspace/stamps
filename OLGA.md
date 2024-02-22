@@ -42,7 +42,7 @@ With Bitcoin Stamps the Bitcoin transaction is three times larger than the OLGA-
 - append empty bytes to last chunk to make it exactly 32 bytes.
 - convert these to P2WSH addresses and add these as tx outputs.
 
-## Link Token to File via Issuance
+## Link Token to OLGA-encoded file via Issuance
 - in the same transaction, insert a valid `op_return` Counterparty issuance.
 - asset description must begin with `STAMP:` (case insensitive) followed by filename.
 - asset must be numeric not named or sub-asset of named.
