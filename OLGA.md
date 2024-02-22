@@ -43,6 +43,9 @@ With Bitcoin Stamps the Bitcoin transaction is three times larger than the OLGA-
 - asset description must begin with `STAMP:` (case insensitive) followed by filename.
 - asset must be numeric not named or sub-asset of named.
 
+## Block Height Activation
+- OLGA-encoded Bitcoin Stamps will only be considered valid on, or after, block height: 832,000
+
 ## Limitations 
 Since a standard node accepts maximum 200 outputs, and one is used for op_return and one for change, the file must fit 198 P2WSH outputs. This implies a max file size of `198*32 - 2 =` 6334 bytes. The theoretical max filesize (that can be mined by a node ignoring standard rules) is `256^2 - 2 =` 65,536 bytes, only limited by the two-byte size prefix.
 
