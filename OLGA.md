@@ -1,1 +1,1 @@
-<pre><p><strong>Octet Linked Graphics & Artifacts</strong><br/>Based on "File Storage in P2WSH Outputs" by JP Janssen<br/>Source: https://github.com/CounterpartyXCP/cips/blob/master/cip-0033.md</p></pre>
+<pre><h3>Bitcoin Stamps Improvement Proposal: Octet Linked Graphics & Artifacts</h3><br/>Based on "File Storage in P2WSH Outputs" by JP Janssen<br/><br/>Source: <a href="https://github.com/CounterpartyXCP/cips/blob/master/cip-0033.md">https://github.com/CounterpartyXCP/cips/blob/master/cip-0033.md</a></pre>
