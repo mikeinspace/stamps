@@ -3,7 +3,11 @@
 Based on "File Storage in P2WSH Outputs" by JP Janssen<br/><br/>Source: <a href="https://github.com/CounterpartyXCP/cips/blob/master/cip-0033.md">https://github.com/CounterpartyXCP/cips/blob/master/cip-0033.md</a>
 
 # Abstract
-Encode a supported `file-type` in burn-addresses along an `issuance` transaction.
+Encode a supported `file-type` saved in binary octets in tx outputs of burn-addresses along an `issuance` transaction.
+
+# Supported File-types
+
+Presently, most image formats (PNG,JPG,GIF,SVG) are supported. Executables are not supported.
 
 # Motivation
 Store files onchain and link these to tokens in a way which
