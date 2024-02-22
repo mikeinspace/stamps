@@ -1,2 +1,2 @@
-<h1>Octet Linked Graphics & Artifacts</h1>
+<code>Octet Linked Graphics & Artifacts</code>
 <h2>Based on "File Storage in P2WSH Outputs" by JP Janssen</h2>
