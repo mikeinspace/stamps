@@ -34,7 +34,7 @@ Example:
 
 A raw bitcoin transaction may be decoded using tools such as:
 
-https://jpja.github.io/Electrum-Counterparty/decode_tx.htm
+https://jpja.github.io/Electrum-Counterparty/decode_tx.html
 
 This will reveal the description field of the STAMP transaction. The description field will contain the base64 string. This string can be decoded using any base64 decoder. 
 
