@@ -5,12 +5,7 @@
 
 <p>Bitcoin Stamps added a novel twist to the traditonal Counterparty approach by adopting the account-balance model but opting to store data within transaction outputs rather than OP_RETURN messages. What this means is that Ordinal theory utilizes UTXOs to determine ownership while Bitcoin Stamps utilizes UTXOs for data storage. It also presents a unique opportunity to leverage aspects of both protocols in order to provide a robust method of permanently storing Ordinals within Bitcoin Stamp vaults.</p>
 
-<p>Bitcoin Stamps (OLGA-encoding) places the Counterparty  OP_RETURN 
+<p>Bitcoin Stamps (OLGA-encoding) places the Counterparty OP_RETURN message (used to control transfer of ownership) in Position 2 (vout:1). This provides an opportunity for the first output to be reserved for an inbound "Sat" which is compliant with Ordinal theory.</p>
 
-jpja olga stamp tool puts the op return in position 2 (vout:1) so the counterparty 'ownership' is 'burnt' during the issuance which is a nice trick .. but as I understand ordinal theory it's the first output that is important  
 
-in counterparty as I understand it  the position of the op return is used to control a transfer of ownership 
 
-so if you want to retain a counterparty ownership of a olga stamp you put the op return in position 1 (vout:0) 
-
-I am aware counterparty 'ownership' can be a contentious issue
